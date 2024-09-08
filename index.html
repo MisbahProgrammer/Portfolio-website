@@ -6,23 +6,26 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.config.js"></script>
 </head>
 <body>
-    <nav class="flex">
-        <img src="img/logo-M.png" alt="" class="w-28 cursor-pointer">
-        <ul>
+    <nav class="flex items-center justify-between gap-10 fixed w-full lg:px-5 xl:px-[8%] py-4 z-50 ">
+        <img src="img/logo-M (2).png" alt="" class="w-28 cursor-pointer ml-14">
+        <ul class="flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#work">My Work</a></li>
             <li><a href="#about">About me</a></li>
             <li><a href="#contact">Contact us</a></li>
         </ul>
-        <a href="#contact">Contact us</a>
-
+        <div class="flex mr-14">
+        <i class="fa-regular fa-moon mx-5 text-2xl text-slate-300 cursor-pointer"></i>
+    </div>
     </nav>
 
 
 
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/3fe0d88517.js" crossorigin="anonymous"></script>
 </body>
 </html>
