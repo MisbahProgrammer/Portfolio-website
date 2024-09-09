@@ -8,10 +8,10 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="tailwind.config.js"></script>
 </head>
-<body>
+<body class="overflow-x-hidden">
     <nav class="flex items-center justify-between gap-10 fixed w-full lg:px-5 xl:px-[8%] py-4 z-50 ">
         <img src="img/logo-M (2).png" alt="" class="w-28 cursor-pointer ml-14">
-        <ul class="flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50 ">
+        <ul class=" items-center md:gap-4 lg:gap-6 hidden md:flex lg:flex   rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#work">My Work</a></li>
@@ -20,8 +20,26 @@
         </ul>
         <div class="flex mr-14">
         <i class="fa-regular fa-moon mx-5 text-2xl text-slate-300 cursor-pointer"></i>
+        <div class="block md:hidden" onclick="openMenu()">
+            <i class="fa-solid fa-bars text-slate-300 cursor-pointer text-2xl"></i>
+        </div>
     </div>
+
+<!-- --------------------------mobile menu-------------------------------------- -->
+        <ul id="side-menu" class="flex md:hidden flex-col py-20 px-10 gap-4 fixed right-[-100%] top-0 bottom-0 h-screen w-64 z-50 bg-rose-50 transition duration-500">
+            <div class="absolute right-6 top-6" onclick="closeMenu()">
+                <i class="fa-solid fa-x cursor-pointer"></i>
+            </div>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">My Work</a></li>
+        <li><a href="#about">About me</a></li>
+        <li><a href="#contact">Contact us</a></li>
+    </ul>
+
+    
     </nav>
+
 
 
 
