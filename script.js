@@ -5,4 +5,5 @@ function openMenu(){
 }
 function closeMenu(){
     sideMenu.style.right = '-100%'
+    console.log('clicked')
 }
