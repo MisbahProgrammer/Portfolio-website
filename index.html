@@ -9,9 +9,9 @@
     <script src="tailwind.config.js"></script>
 </head>
 <body class="overflow-x-hidden">
-    <nav class="flex items-center justify-between gap-10 fixed w-full lg:px-5 xl:px-[8%] py-4 z-50 bg-zinc-50">
+    <nav class="flex items-center justify-between gap-10 fixed w-full lg:px-5 xl:px-[8%] py-4 z-50 bg-transparent">
         <img src="img/logo-M (2).png" alt="" class="w-28 cursor-pointer ml-14">
-        <ul class=" items-center md:gap-4 lg:gap-6 hidden md:flex lg:flex   rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
+        <ul class=" items-center md:gap-4 lg:gap-6 hidden md:flex lg:flex md:border-t  rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50">
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
             <li><a href="#work">My Work</a></li>
@@ -26,7 +26,7 @@
     </div>
 
 <!-- --------------------------mobile menu-------------------------------------- -->
-        <ul id="side-menu" class="flex md:hidden flex-col py-20 px-10 gap-4 fixed right-[-100%] top-0 bottom-0 h-screen w-64 z-50 bg-rose-50 transition duration-500">
+        <ul id="side-menu" class="flex md:hidden flex-col py-20 px-10 gap-4 fixed right-[-100%] top-0 bottom-0 h-screen w-64 z-50 bg-gradient-to-t from-[#f2f5f7] to-[#dae2eb] transition duration-500">
             <div class="absolute right-6 top-6" onclick="closeMenu()">
                 <i class="fa-solid fa-x cursor-pointer"></i>
             </div>
@@ -43,14 +43,26 @@
     <!-- ---------------------Main----------------------------- -->
 
     <div class="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
-        <img src="img/profile1.png" alt="" class="rounded-full w-2/6 text-center">
+        <img src="img/about.png" alt="" class="rounded-full w-2/5 text-center">
         <h3 class="flex items-center gap-2 text-xl md:text-2xl mb-3">Hi! I'm Misbah Ur Rehman <img src="img/hello.png" alt="" class="w-6"></h3>
-        <h1 class="text-3xl sm:text-6xl lg:text-[66px] text-center">Frontend Web Developer</h1>
+        <h1 class="text-3xl sm:text-6xl lg:text-[66px] text-center text-[#035efc]">Frontend Web Developer</h1>
         <p class="mx-auto max-w-2xl">I am a Frontend Developer based in Pakistan, with 1 year of experience</p>
+        <div class="flex items-center mt-4 flex-col md:flex-row gap-3">
+            <a href="#Contact" class="px-10 py-3 border rounded-full text-white bg-gradient-to-r from-[#03b1fc] to-[#034efc] flex items-center gap-2">Contact ME <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="img/Europass CV .pdf" download class="px-10 py-3 border rounded-full text-black bg-gradient-to-t from-[#ebebeb] to-[#bac4cf] flex items-center gap-2">My Resume <i class="fa-solid fa-circle-down"></i></a>
+        </div>
     </div>
 
+    <!-- ---------------------About----------------------------------- -->
+    <div id="about" class="w-full px-4 py-10">
+        <h4 class="text-center text-lg mb-2">Introduction</h4>
+        <h2 class="text-center text-5xl ">About Me</h2>
 
-
+        <div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/3fe0d88517.js" crossorigin="anonymous"></script>
